@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{multicol}
 \input{glyphtounicode}
 
 
@@ -125,13 +126,33 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {Cornell University}{Ithaca, NY}
-      {Bachelor of Science in Computer Science, In Progress (Anticipated June 2025) GPA: 4.Something}{Aug. 2021 -- Present}
-    \resumeSubheading
-      {Briarcliff High School}{Briarcliff Manor, NY}
-      {}{Sep. 2017 -- June 2021}
+    \vspace{-2pt}\item
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Cornell University} & Ithaca, NY \\
+        \textit{\small Bachelor of Science in Computer Science, In Progress (Anticipated June 2025)} & \textit{\small Aug. 2021 -- Present} \\
+        \textit{\small GPA: 4.Something/4} & \textit{\small } \\
+      \end{tabular*}\vspace{-7pt}
+    \vspace{-2pt}\item
+      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Briarcliff High School} & Briarcliff Manor, NY \\
+        \textit{\small Regents Diploma with Honors and Distinction in Mathematics} & \textit{\small Sep. 2017 -- June 2021} \\
+        \textit{\small GPA: 101.36/100} & \textit{\small } \\
+      \end{tabular*}\vspace{-7pt}
   \resumeSubHeadingListEnd
+
+%----------COURSEWORK------------
+\section{Relevent Courses}
+  \begin{multicols}{2}
+    \begin{itemize}
+      \item Object Oriented Programming and Data Structures
+      \item Discrete Structures
+      \item Linear Algebra for Engineers
+      \item AP Computer Science A
+      \item Multivariable Calculus for Engineers
+      \item AP Mathematics: Calculus BC
+    \end{itemize}
+  \end{multicols}
+  
 
 
 %-----------EXPERIENCE-----------
@@ -139,11 +160,11 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Undergraduate Research Assistant}{June 2020 -- Present}
-      {Texas A\&M University}{College Station, TX}
+      {Cornell Autonomous Bicycle Navigation Developer}{Nov. 2021 -- Present}
+      {Cornell University}{Ithaca, NY}
       \resumeItemListStart
-        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
-        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Contributed to a repository with 25k+ lines of code}
+        \resumeItem{Worked with a team to create collision avoidance algorithms}
         \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
       \resumeItemListEnd
       
