@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.16)  28 DEC 2021 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.16)  28 DEC 2021 16:13
 entering extended mode
 **c:/Users/arimi/Documents/git/Resume/Resume.tex
 (c:/Users/arimi/Documents/git/Resume/Resume.tex
@@ -366,11 +366,11 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 117
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 130.
+(Font)              <10.95> on input line 131.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 130.
+(Font)              <8> on input line 131.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 130.
+(Font)              <6> on input line 131.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -395,7 +395,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  60i,11n,66p,285b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\arimi\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/arimi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/arimi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/arimi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/arimi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/arimi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/arimi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/arimi/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Resume.pdf (1 page, 112081 bytes).
+Output written on Resume.pdf (1 page, 112175 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  8 named destinations out of 1000 (max. 500000)
