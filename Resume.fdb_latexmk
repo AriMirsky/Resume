@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1640726017 "c:/Users/arimi/Documents/git/Resume/Resume.tex" "Resume.pdf" "Resume" 1640726019
+["pdflatex"] 1640728711 "c:/Users/arimi/Documents/git/Resume/Resume.tex" "Resume.pdf" "Resume" 1640728712
   "C:/Users/arimi/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1640212776 11548 d581afa7192d61685865515310aaa47d ""
   "C:/Users/arimi/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1623857764 9742851 8d267c270ed8233808594938279d52ee ""
   "C:/Users/arimi/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1640101098 80937 91001db6d4ae332437b4b739862cda02 ""
@@ -85,12 +85,12 @@
   "C:/Users/arimi/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1622546726 7147 5ac8a9ef36411064b1a501137af0fa54 ""
   "C:/Users/arimi/AppData/Local/Programs/MiKTeX/tex/latex/tools/verbatim.sty" 1622546726 7392 39729ae6a807e217edf1442cf8fab2c2 ""
   "C:/Users/arimi/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Resume.aux" 1640726019 1416 118a39964cdb596a56c6f96db151cb61 "pdflatex"
-  "Resume.out" 1640726019 604 7c58b435ad6203df870a4e6d9e562ccd "pdflatex"
-  "Resume.tex" 1640726016 7922 89eb1eddb2ce926081e5f439124a9e75 ""
-  "c:/Users/arimi/Documents/git/Resume/Resume.tex" 1640726016 7922 89eb1eddb2ce926081e5f439124a9e75 ""
+  "Resume.aux" 1640728712 1416 118a39964cdb596a56c6f96db151cb61 "pdflatex"
+  "Resume.out" 1640728712 604 7c58b435ad6203df870a4e6d9e562ccd "pdflatex"
+  "Resume.tex" 1640728710 7899 0ea5068180692d1fc2c89caf877f6dfd ""
+  "c:/Users/arimi/Documents/git/Resume/Resume.tex" 1640728710 7899 0ea5068180692d1fc2c89caf877f6dfd ""
   (generated)
-  "Resume.log"
-  "Resume.aux"
-  "Resume.pdf"
   "Resume.out"
+  "Resume.log"
+  "Resume.pdf"
+  "Resume.aux"
