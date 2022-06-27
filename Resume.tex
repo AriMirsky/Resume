@@ -21,6 +21,8 @@
 \usepackage{multicol}
 \usepackage[T1]{fontenc}
 \usepackage{mathptmx}
+\usepackage{enumitem}
+\usepackage{setspace}
 \input{glyphtounicode}
 
 
@@ -105,7 +107,7 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\setstretch{0.9}
 \begin{document}
 
 %----------HEADING----------
@@ -117,7 +119,8 @@
 \begin{center}
     \textbf{\Huge \scshape Ari Mirsky} \\ \vspace{1pt}
     \small 914-844-6779 $|$ \href{mailto:arimirsky@gmail.com}{arimirsky@gmail.com} $|$ 
-    \href{https://github.com/AriMirsky}{github.com/AriMirsky}
+    \href{https://github.com/AriMirsky}{github.com/AriMirsky} $|$
+    \href{https://www.linkedin.com/in/AriMirsky/}{linkedin.com/in/AriMirsky}
 \end{center}
 
 %-------------------------------
@@ -145,8 +148,8 @@ science problems.
 
 %----------COURSEWORK------------
 \section{Relevant Courses}
-  \begin{multicols}{2}\verysmall
-    \begin{itemize}
+  \begin{multicols}{2}\small
+    \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
       \item Data Structures and Functional Programming
       \item Object Oriented Programming and Data Structures
       \item Discrete Structures
@@ -163,7 +166,16 @@ science problems.
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
-
+    
+    \resumeSubheading
+      {Programmer Analyst, Niemack Research Group}{May 2022 -- Present}
+      {Cornell University}{Ithaca, NY}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy excel programs into Python}
+        \resumeItem{Created an automated data pipeline from telescope parameters to constraints on cosmological parameters}
+        \resumeItem{Published open source generalizable code for other telescope designs and locations}
+      \resumeItemListEnd
+      
     \resumeSubheading
       {Navigation Developer, Cornell Autonomous Bicycle}{Oct. 2021 -- Present}
       {Cornell University}{Ithaca, NY}
