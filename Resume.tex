@@ -82,6 +82,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingSmall}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -146,6 +153,23 @@
 \section{Experience}
 \resumeSubHeadingListStart
 
+\resumeSubheadingSmall{Software Engineer, Amazon}{New York, NY}
+
+\resumeSubSubheading{Cloud Architected Network Telemetry Team}{May 2024 -- Present}
+\resumeItemListStart
+\resumeItem{Utilized AWS Glue Data Quality to determine the correctness of vended datasets}
+\resumeItem{Used AWS CloudWatch Alarms and Dashboards to display up-to-date data quality information}
+\resumeItem{Designed metrics to display coverage of hosts and IPs to inform decisions about expansion decisions}
+\resumeItemListEnd
+
+\resumeSubSubheading{UnifiedAuth Team}{May 2023 -- Aug 2023}
+\resumeItemListStart
+\resumeItem{Utilized AWS managed Grafana to create dashboards for internal team usage and for other customers within Amazon}
+\resumeItem{Used SQL queries through Amazon's Redshift to process telemetry data}
+\resumeItem{Created a microservice using EC2 instances alongside S3 buckets that allowed services within Amazon to determine their callers' Transitive Authentication adoption status}
+\resumeItem{Preprocessed data hourly to maintain low latency responses with up-to-date information}
+\resumeItemListEnd
+
 \resumeSubheading
 {Cornell Autonomous Bicycle}{}
 {Cornell University}{Ithaca, NY}
@@ -177,15 +201,6 @@
 \resumeItem{Held office hours to help students understand the class material}
 \resumeItem{Graded students' exams and homeworks}
 \resumeItem{Was a teaching assistant for Discrete Structures for Fall 2023 and Analysis of Algorithms for Spring 2024}
-\resumeItemListEnd
-
-\resumeSubheading{Software Engineer, Amazon}{May 2023 -- Aug 2023}
-{UnifiedAuth Team}{New York, NY}
-\resumeItemListStart
-\resumeItem{Utilized AWS managed Grafana to create dashboards for internal team usage and for other customers within Amazon}
-\resumeItem{Used SQL queries through Amazon's Redshift to process telemetry data}
-\resumeItem{Created a microservice using EC2 instances alongside S3 buckets that allowed services within Amazon to determine their callers' Transitive Authentication adoption status}
-\resumeItem{Preprocessed data hourly to maintain low latency responses with up-to-date information}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -228,7 +243,7 @@
     \item Functional Programming
     \item Object Oriented Programming
     \item Discrete Structures
-    \item Honors Linear Algebra
+    \item Reinforcement Learning
     \item Operating Systems
     \item Probability and Statistics
   \end{itemize}\normalsize
