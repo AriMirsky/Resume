@@ -1,12 +1,11 @@
 %-------------------------
 % Resume in Latex
-% Author : Ari Mirsky
+% Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
-\usepackage[legalpaper]{geometry}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -19,25 +18,14 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
 \usepackage{multicol}
-\usepackage[T1]{fontenc}
-\usepackage{mathptmx}
-\usepackage{enumitem}
-\usepackage{setspace}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
 
 %----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -46,11 +34,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
@@ -60,7 +48,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -74,18 +62,17 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
 }
 
-\newcommand{\resumeSubheadingSmall}[2]{
+\newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -98,16 +85,17 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -115,155 +103,137 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setstretch{0.9}
-\begin{document}
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://www.arimirsky.com}{\Large Ari Mirsky}} & Email : \href{mailto:arimirsky@gmail.com}{arimirsky@gmail.com}\\
-%   \href{http://www.arimirsky.com}{http://www.arimirsky.com} & Mobile : 914-844-6779 \\
-% \end{tabular*}
 
+\begin{document}
+
+%----------HEADING----------
 \begin{center}
-  \textbf{\Huge \scshape Ari Mirsky} \\ \vspace{1pt}
-  \small 914-844-6779 $|$ \href{mailto:arimirsky@gmail.com}{arimirsky@gmail.com} $|$
-  \href{https://github.com/AriMirsky}{github.com/AriMirsky} $|$
-  \href{https://www.linkedin.com/in/AriMirsky/}{linkedin.com/in/AriMirsky}
+    {\Huge \scshape Ari Mirsky} \\ \vspace{1pt}
+    Ithaca, NY \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 914-844-6779 ~ \href{mailto:arimirsky@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{arimirsky@gmail.com}} ~
+    \href{https://www.linkedin.com/in/arimirsky/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/arimirsky}}  ~
+    \href{https://github.com/AriMirsky}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/AriMirsky}}
+    \vspace{-10pt}
 \end{center}
+
 
 %-----------EDUCATION-----------
 \section{Education}
-\resumeSubHeadingListStart
-\vspace{-2pt}\item
-\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-  \textbf{Cornell University} & Ithaca, NY \\
-  \textit{\small John McMullen Dean’s Scholar} & \textit{\small Aug. 2021 -- Present} \\
-  \textit{\small B.S. in Computer Science, In Progress (Anticipated May 2025)} & \\
-  \textit{\small GPA: 4.058/4} & \textit{\small } \vspace{5pt}
-\end{tabular*}\vspace{-7pt}
-\vspace{-2pt}\item
-\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-  \textbf{Briarcliff High School} & Briarcliff Manor, NY \\
-  \textit{\small Regents Diploma with Honors and Distinction in Mathematics} & \textit{\small Sep. 2017 -- June 2021} \\
-  \textit{\small GPA: 101.36/100} & \textit{\small } \\
-\end{tabular*}\vspace{-7pt}
-\resumeSubHeadingListEnd
-
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell University}{Aug. 2021 -- May 2025}
+      {Bachelor of Science in Computer Science, GPA: 4.058/4.0}{Ithaca, NY}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-\resumeSubHeadingListStart
+ \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell University}{Aug. 2023 -- Present}
+      {Teaching Assistant}{Ithaca, NY}
+      \resumeItemListStart
+        \resumeItem{Awarded CIS TA Recognition Award for excellent teaching skills and examples}
+        \resumeItem{Led recitations to reinforce class concepts}
+        \resumeItem{Held office hours to help students understand the class material}
+        \resumeItem{Was a teaching assistant for Discrete Structures for Fall 2023 and Analysis of Algorithms for Spring 2024, Fall 2024}
+      \resumeItemListEnd
+      \vspace{-5pt}
 
-\resumeSubheadingSmall{Software Engineer, Amazon}{New York, NY}
+    \resumeSubheading
+      {Amazon}{May 2024 -- Aug. 2024}
+      {Software Engineer Intern}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Utilized AWS Glue, Lambda functions, and CloudWatch to determine and visualize the correctness of datasets}
+        \resumeItem{Saved at least 5 SDE hours/month of alarm debugging with better visualization of dataset health metrics over time}
+        \resumeItem{Eliminated 25+ tickets/month with alarm consolidation and the deprecation of old, seldom used systems}
+      \resumeItemListEnd
+      \vspace{-5pt}
 
-\resumeSubSubheading{Cloud Architected Network Telemetry Team}{May 2024 -- Present}
-\resumeItemListStart
-\resumeItem{Utilized AWS Glue Data Quality to determine the correctness of vended datasets}
-\resumeItem{Used AWS CloudWatch Alarms and Dashboards to display up-to-date data quality information}
-\resumeItem{Designed metrics to display coverage of hosts and IPs to inform decisions about expansion decisions}
-\resumeItemListEnd
-
-\resumeSubSubheading{UnifiedAuth Team}{May 2023 -- Aug 2023}
-\resumeItemListStart
-\resumeItem{Utilized AWS managed Grafana to create dashboards for internal team usage and for other customers within Amazon}
-\resumeItem{Used SQL queries through Amazon's Redshift to process telemetry data}
-\resumeItem{Created a microservice using EC2 instances alongside S3 buckets that allowed services within Amazon to determine their callers' Transitive Authentication adoption status}
-\resumeItem{Preprocessed data hourly to maintain low latency responses with up-to-date information}
-\resumeItemListEnd
-
-\resumeSubheading
-{Cornell Autonomous Bicycle}{}
-{Cornell University}{Ithaca, NY}
-
-\resumeSubSubheading{Software Team Lead}{May 2023 -- Present}
-\resumeItemListStart
-\resumeItem{Designed and allocated projects for a team of 15 people}
-\resumeItem{Managed the integration of the vision, navigation, and controls systems}
-\resumeItem{Directed the creation of connections between software and hardware on the physical bike}
-\resumeItemListEnd
-
-\resumeSubSubheading{Navigation Subteam Lead}{May 2022 -- May 2023}
-\resumeItemListStart
-\resumeItem{Researched, designed, and implemented reinforcement learning algorithms for obstacle avoidance, including Q-learning}
-\resumeItem{Researched and designed supervised machine learning algorithm using a random forest approach for determining how densely to sample the state space}
-\resumeItem{Constructed a future plan for the team to transition from an autonomous bicycle to autonomous drone once autonomous bicycle testing is finished}
-\resumeItemListEnd
-
-\resumeSubSubheading{Navigation Developer}{Oct 2021 -- May 2022}
-\resumeItemListStart
-\resumeItem{Contributed to a repository with 25k+ lines of code}
-\resumeItem{Worked with a team to create path following and collision avoidance algorithms}
-\resumeItem{Integrated bicycle hardware with pathing software using ROS}
-\resumeItemListEnd
-
-\resumeSubheading{Teaching Assistant}{Aug 2023 -- Present}
-{Cornell University}{Ithaca, NY}
-\resumeItemListStart
-\resumeItem{Led recitations to reinforce class concepts}
-\resumeItem{Held office hours to help students understand the class material}
-\resumeItem{Graded students' exams and homeworks}
-\resumeItem{Was a teaching assistant for Discrete Structures for Fall 2023 and Analysis of Algorithms for Spring 2024}
-\resumeItemListEnd
-
-\resumeSubheading
-{Programmer Analyst, Niemack Research Group}{May 2022 -- Jun 2023}
-{Cornell University}{Ithaca, NY}
-\resumeItemListStart
-\resumeItem{Modernized legacy excel programs into Python}
-\resumeItem{Created an automated data pipeline from telescope parameters to constraints on cosmological parameters}
-\resumeItem{Published open source generalizable code for other telescope designs and locations}
-\resumeItem{Produced simulated maps of the sky using calculated sensitivity data}
-\resumeItemListEnd
-
-
-
-\resumeSubHeadingListEnd
-
-
+    \resumeSubheading
+      {Amazon}{May 2023 -- Aug. 2023}
+      {Software Engineer Intern}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Employed AWS managed Grafana to create dashboards for internal team usage and for other customers within Amazon}
+        \resumeItem{Used SQL queries through Amazon's Redshift to process telemetry data}
+        \resumeItem{Created a microservice using EC2 instances alongside S3 buckets that allowed services within Amazon to determine their callers' Transitive Authentication adoption status}
+        \resumeItem{Preprocessed data hourly to maintain low latency responses with up-to-date information}
+      \resumeItemListEnd
+      \vspace{-5pt}
+    
+    \resumeSubheading
+      {Niemack Research Group}{May 2022 -- Jun. 2023}
+      {Programmer Analyst}{Ithaca, NY}
+      \resumeItemListStart
+        \resumeItem{Modernized legacy excel programs into Python}
+        \resumeItem{Created an automated data pipeline from telescope parameters to constraints on cosmological parameters}
+        \resumeItem{Published open source generalizable code for other telescope designs and locations}
+        \resumeItem{Produced simulated maps of the sky using calculated sensitivity data}
+      \resumeItemListEnd
+      \vspace{-5pt}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
 %-----------PROJECTS-----------
 \section{Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{Discord Bot} $|$ \emph{Python, Discord.py}}{June 2021 -- July 2021}
-\resumeItemListStart
-\resumeItem{Created a discord bot that responded to messages sent in selected discord servers}
-\resumeItem{The bot asynchronously responded to user input}
-\resumeItem{Integrated with open source Discord.py}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cornell Autonomous Bicycle}{Oct. 2021 -- Present}
+      {Software Team Lead}{Ithaca, NY}
+      \resumeItemListStart
+        \resumeItem{Designed and allocated projects for a team of 15 people}
+        \resumeItem{Managed the integration of the vision, navigation, and controls systems}
+        \resumeItem{Directed the creation of connections between software and hardware on the physical bike}
+      \resumeItemListEnd
+      \vspace{-7pt}
 
-%----------COURSEWORK------------
-\section{Relevant Courses}
-\begin{multicols}{3}\small
-  \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
-    \item Analysis of Algorithms
-    \item Reinforcement Learning
-    \item Computer Vision
-    \item Computer System Organization
-    \item Foundations of Robotics
-    \item Computer Graphics
-    \item Functional Programming
-    \item Object Oriented Programming
-    \item Discrete Structures
-    \item Reinforcement Learning
-    \item Operating Systems
-    \item Probability and Statistics
-  \end{itemize}\normalsize
-\end{multicols}
+      \resumeSubSubheading{Navigation Subteam Lead}{}
+      \resumeItemListStart
+        \resumeItem{Researched, designed, and implemented reinforcement learning algorithms for obstacle avoidance, including Q-learning}
+        \resumeItem{Researched and designed supervised machine learning algorithm using a random forest approach for determining how densely to sample the state space}
+        \resumeItem{Constructed a future plan for the team to transition from an autonomous bicycle to autonomous drone once autonomous bicycle testing is finished}
+      \resumeItemListEnd
+      \vspace{-7pt}
 
+      \resumeSubSubheading{Navigation Developer}{}
+      \resumeItemListStart
+        \resumeItem{Contributed to a repository with 25k+ lines of code}
+        \resumeItem{Worked with a team to create path following and collision avoidance algorithms}
+        \resumeItem{Integrated bicycle hardware with pathing software using ROS}
+      \resumeItemListEnd   
+      \vspace{-7pt}
+     \resumeSubHeadingListEnd
+       
+\vspace{-14pt}
 
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+  \begin{multicols}{4}\small
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+      \item Analysis of Algorithms
+      \item Reinforcement Learning
+      \item Computer Vision
+      \item Foundations of Robotics
+      \item Computer System Organization
+      \item Computer Graphics
+      \item Functional Programming
+      \item Object Oriented Programming
+      \item Discrete Structures
+      \item Reinforcement Learning
+      \item Operating Systems
+      \item Probability and Statistics
+        \end{itemize}
+    \end{multicols}
+  \vspace{1.0\multicolsep}
+\vspace{-8pt}
 
-
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \small{\item{
-                \textbf{Languages}{: Java, Kotlin, Python, Bash, JavaScript, HTML/CSS, R, OCaml, C, C++, TypeScript, Rust} \\
-                \textbf{Frameworks/Libraries}{: Swing, FastAPI, Discord.py, ROS, Gazebo, NumPy, Matplotlib} \\
-                \textbf{Developer Tools}{: Git, Visual Studio Code, IntelliJ, Eclipse, BlueJ, Jupyter Notebook, Conda, React}
-          }}
-\end{itemize}
-
-
-%-------------------------------------------
+\vspace{-3pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, SQL, Java, Python, Bash, JavaScript, HTML/CSS, R, OCaml, C, C++} \\
+     \textbf{Developer Tools}{: NumPy, Matplotlib, ROS, Swing, Discord.py} \\
+     \textbf{Technologies}{: AWS, Grafana, Git, Visual Studio Code, IntelliJ, Eclipse, BlueJ, Jupyter Notebook, Conda, React} \\
+    }}
+ \end{itemize}
 \end{document}
