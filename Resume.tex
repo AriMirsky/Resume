@@ -109,7 +109,7 @@
 %----------HEADING----------
 \begin{center}
     {\Huge \scshape Ari Mirsky} \\ \vspace{1pt}
-    Ithaca, NY \\ \vspace{1pt}
+    New York, NY \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ 914-844-6779 ~ \href{mailto:arimirsky@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{arimirsky@gmail.com}} ~
     \href{https://www.linkedin.com/in/arimirsky/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/arimirsky}}  ~
     \href{https://github.com/AriMirsky}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/AriMirsky}}
@@ -122,7 +122,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Cornell University}{Aug. 2021 -- May 2025}
-      {Bachelor of Science in Computer Science, GPA: 4.058/4.0}{Ithaca, NY}
+      {Bachelor of Science in Computer Science, Minor in Mathematics}{Ithaca, NY}
   \resumeSubHeadingListEnd
 \vspace{-16pt}
 
@@ -130,13 +130,22 @@
 \section{Experience}
  \resumeSubHeadingListStart
     \resumeSubheading
-      {Cornell University}{Aug. 2023 -- Present}
+      {Amazon}{Jul. 2025 -- Present}
+      {Software Development Engineer I}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Built an MCP tool evaluation framework leveraging AI agents to automate response grading, establishing regression testing for prompt changes}
+        \resumeItem{Won a hackathon for an AI-powered feedback tool that generated context-aware multiple choice questions, increasing feedback granularity on the team's agent development platform used across Amazon}
+        \resumeItem{Led the consolidation and deprecation of legacy petabyte-scale data engineering platforms, reducing operational load by 1 SDE-year annually and simplifying onboarding for dependent teams}
+        \resumeItem{Built networking canaries leveraging static config analysis and live traffic probes to surface issues across 25,000+ teams, reducing detection time from hours to minutes}
+      \resumeItemListEnd
+      \vspace{-5pt}
+
+    \resumeSubheading
+      {Cornell University}{Aug. 2023 -- May 2025}
       {Teaching Assistant}{Ithaca, NY}
       \resumeItemListStart
-        \resumeItem{Awarded CIS TA Recognition Award for excellent teaching skills and examples}
-        \resumeItem{Led recitations to reinforce class concepts}
-        \resumeItem{Held office hours to help students understand the class material}
-        \resumeItem{Was a teaching assistant for Discrete Structures for Fall 2023 and Analysis of Algorithms for Spring 2024, Fall 2024}
+        \resumeItem{Awarded CIS TA Recognition Award for outstanding teaching across 4 semesters}
+        \resumeItem{Taught Discrete Structures (Fall 2023), Analysis of Algorithms (Spring 2024, Fall 2024), and Operating Systems (Spring 2025)}
       \resumeItemListEnd
       \vspace{-5pt}
 
@@ -144,8 +153,8 @@
       {Amazon}{May 2024 -- Aug. 2024}
       {Software Engineer Intern}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Utilized AWS Glue, Lambda functions, and CloudWatch to determine and visualize the correctness of datasets}
-        \resumeItem{Saved at least 5 SDE hours/month of alarm debugging with better visualization of dataset health metrics over time}
+        \resumeItem{Developed dataset correctness monitoring using AWS Glue, Lambda functions, and CloudWatch}
+        \resumeItem{Saved 5+ SDE hours/month of alarm debugging by building dataset health metric dashboards}
         \resumeItem{Eliminated 25+ tickets/month with alarm consolidation and the deprecation of old systems}
       \resumeItemListEnd
       \vspace{-5pt}
@@ -154,10 +163,8 @@
       {Amazon}{May 2023 -- Aug. 2023}
       {Software Engineer Intern}{New York, NY}
       \resumeItemListStart
-        \resumeItem{Employed AWS managed Grafana to create dashboards for internal team usage and for other customers within Amazon}
-        \resumeItem{Used SQL queries through Amazon's Redshift to process telemetry data}
-        \resumeItem{Created a microservice using EC2 instances alongside S3 buckets that allowed services within Amazon to determine their callers' Transitive Authentication adoption status}
-        \resumeItem{Preprocessed data hourly to maintain low latency responses with up-to-date information}
+        \resumeItem{Developed Grafana dashboards adopted across Amazon organizations for monitoring authentication metrics}
+        \resumeItem{Architected a microservice on EC2 and S3 using Amazon Redshift telemetry data, enabling Amazon services to assess Transitive Authentication adoption with sub-second responses}
       \resumeItemListEnd
       \vspace{-5pt}
     
@@ -165,10 +172,9 @@
       {Niemack Research Group}{May 2022 -- Jun. 2023}
       {Programmer Analyst}{Ithaca, NY}
       \resumeItemListStart
-        \resumeItem{Modernized legacy excel programs into Python}
-        \resumeItem{Created an automated data pipeline from telescope parameters to constraints on cosmological parameters}
-        \resumeItem{Published open source generalizable code for other telescope designs and locations}
-        \resumeItem{Produced simulated maps of the sky using calculated sensitivity data}
+        \resumeItem{Engineered an automated data pipeline from telescope parameters to cosmological parameter constraints}
+        \resumeItem{Published open source code generalizable to other telescope designs and observing locations}
+        \resumeItem{Generated simulated sky maps using calculated sensitivity data to validate pipeline outputs}
       \resumeItemListEnd
       \vspace{-5pt}
   \resumeSubHeadingListEnd
@@ -177,63 +183,42 @@
 \section{Projects}
     \resumeSubHeadingListStart
     \resumeSubheading
-      {Cornell Autonomous Bicycle}{Oct. 2021 -- Present}
-      {Software Team Lead}{Ithaca, NY}
+      {Cornell Autonomous Bicycle}{Oct. 2021 -- May 2025}
+      {Team Lead}{Ithaca, NY}
       \resumeItemListStart
-        \resumeItem{Designed and allocated projects for a team of 15 people}
-        \resumeItem{Managed the integration of the vision, navigation, and controls systems}
-        \resumeItem{Directed the creation of connections between software and hardware on the physical bike}
+        \resumeItem{Managed 15 members across software, mechanical, and business, coordinating hardware procurement, fabrication timelines, sponsor relations, and a public showcase to the Cornell community}
       \resumeItemListEnd
       \vspace{-7pt}
 
-      \resumeSubSubheading{Navigation Subteam Lead}{}
+      \resumeSubSubheading{Software Lead}{}
       \resumeItemListStart
-        \resumeItem{Researched, designed, and implemented reinforcement learning algorithms for obstacle avoidance, including Q-learning}
-        \resumeItem{Researched and designed supervised machine learning algorithm using a random forest approach for determining how densely to sample the state space}
-        \resumeItem{Constructed a future plan for the team to transition from an autonomous bicycle to autonomous drone once autonomous bicycle testing is finished}
+        \resumeItem{Integrated vision, navigation, and controls systems including LiDAR-based perception, linear quadratic regulators for balance control, and ROS-based hardware interfaces}
+      \resumeItemListEnd
+      \vspace{-7pt}
+
+      \resumeSubSubheading{Navigation Lead}{}
+      \resumeItemListStart
+        \resumeItem{Researched, designed, and implemented reinforcement learning algorithms for obstacle avoidance including Q-learning, and a random forest model to optimize state space sampling density}
       \resumeItemListEnd
       \vspace{-7pt}
 
       \resumeSubSubheading{Navigation Developer}{}
       \resumeItemListStart
-        \resumeItem{Contributed to a repository with 25k+ lines of code}
-        \resumeItem{Worked with a team to create path following and collision avoidance algorithms}
-        \resumeItem{Integrated bicycle hardware with pathing software using ROS}
+        \resumeItem{Implemented path following and collision avoidance algorithms and integrated bicycle hardware with navigation software using ROS}
       \resumeItemListEnd   
       \vspace{-7pt}
      \resumeSubHeadingListEnd
        
 \vspace{-14pt}
 
-%------RELEVANT COURSEWORK-------
-\section{Relevant Coursework}
-  \begin{multicols}{4}\small
-    \begin{itemize}[itemsep=-5pt, parsep=3pt]
-      \item Analysis of Algorithms
-      \item Reinforcement Learning
-      \item Computer Vision
-      \item Foundations of Robotics
-      \item Computer System Organization
-      \item Computer Graphics
-      \item Functional Programming
-      \item Object Oriented Programming
-      \item Discrete Structures
-      \item Reinforcement Learning
-      \item Operating Systems
-      \item Probability and Statistics
-        \end{itemize}
-    \end{multicols}
-  \vspace{1.0\multicolsep}
-\vspace{-8pt}
-
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
 \vspace{-3pt}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, SQL, Java, Python, Bash, JavaScript, HTML/CSS, R, OCaml, C, C++} \\
-     \textbf{Developer Tools}{: NumPy, Matplotlib, ROS, Swing, Discord.py} \\
-     \textbf{Technologies}{: AWS, Grafana, Git, Visual Studio Code, IntelliJ, Eclipse, BlueJ, Jupyter Notebook, Conda, React} \\
+     \textbf{Languages}{: Java, TypeScript, Python, SQL, Scala, Kotlin, Go, Bash, Ruby, JavaScript, HTML/CSS, OCaml, C, C++} \\
+     \textbf{Frameworks}{: AWS CDK, Coral, Smithy, Spark, Docker, React, ROS, NumPy} \\
+     \textbf{Technologies}{: AWS (Lambda, DynamoDB, Kinesis, Step Functions, VPC, Route 53, and more), Grafana, Git, Protobuf} \\
     }}
  \end{itemize}
 \end{document}
